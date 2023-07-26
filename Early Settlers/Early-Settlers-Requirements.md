@@ -45,4 +45,7 @@ The following are snippets of the actual instructions I was provided for this pr
 ## The ASPX Page
 The second part of this project is recreating the actual early settlers website <http://earlysettlers.msa.maryland.gov/> as an ASP.NET Web Application.
 
-|insert actual requirements here|
+The following are snippets of the actual instructions I was provided for this project:
+>Review the website for its functionality and convert that functionality to an ASPX page. This assignment simulates a typical website conversion. For web work you must use Stored Procedures to interact with the DB for security purposes.
+>
+>Once you have submitted your second project with the basic functionality and are waiting for review please attempt to improve the functionality and the appearance of your new Early Settlers ASPX.
