@@ -5,5 +5,7 @@ This repository is a collection of information about and demos of the various pr
 ### Summer, 2023
 
   (May 31) Early Settlers (Intern Starter/Dummy Project)
+  
   (June 7) MSA Portal Directory Editor - Update/Overhaul
+  
   (June 13) AoM File Browser Application
