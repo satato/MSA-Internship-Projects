@@ -40,4 +40,22 @@ I also thought it would be good to have some indication of when a field has been
 This feature applied to **all editable fields on the form**, and would **highlight a field when its contents were changed from what was stored in the database.** This makes it easy to know, at a glance, whether an entry needs to be saved, reverted, etc.
 
 ## The Issue
-|describe the issue that occurred here|
+The changes were relatively easy to implement, and my supervisor was impressed - so far, so good. The next step was for us to test it and make sure that everything was working how we wanted it to... unfortunately, this is where issues arose. The application was originally developed by an intern some years ago, and we swiftly discovered when testing my implementation that the original application had a plethora of issues.
+
+Some behavior was unpredictable and frustrating, some was simply annoying, but there were a lot of little bugs throughout the program that we wanted to resolve. Suddenly, this project became a much larger task.
+
+Each time we tested the project again, we found something else that had flown under the radar. When later speaking to administrative staff, who use the application regularly, they shared that they knew of these issues but were used to them and subsequently had ignored them. 
+
+Some of the issues identified include:
+- when an entry was updated...
+  - the scrollbar jumped back to the top of the list
+  - the current selection loaded in the form was reset to the first one (and not whichever entry was just saved/updated)
+- validation for the "Is a Location" checkbox did not work correctly, resulting in errors being presented when there were none
+- when a name is clicked while the scrollbar is towards the bottom, unpredictable, jagged, movement of the name box and scrollbar would occur
+- occasional inconsistent display between the selection in the list of entries and the contents of the form itself
+- the "Add" form didn't validate name fields
+- entries with duplicate names could be created, but only the contents of the first one would be displayed if either one is selected from the list (because the database query is based on name)
+
+amongst others.
+
+I managed to resolve each of these issues one-by-one, and when it came time to log the changes made to the program, we realized that this was no longer a simple update from v0.1.0.2 to v0.1.0.3, but rather an overhaul of the application, bringing it out of beta to v1.0.0.0
